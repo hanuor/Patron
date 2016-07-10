@@ -5,4 +5,7 @@ package com.hanuor.patron.API_DB;
  */
 public class ApiContainer {
 //Github api's
+    public static final String ROOT_API = "https://api.github.com/search/repositories?q=fluke";
+
+
 }
