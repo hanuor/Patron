@@ -23,6 +23,9 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
+    compile files('libs/App42_ANDROID_SDK_3.8.jar')
+    // https://mvnrepository.com/artifact/org.kohsuke/github-api
+    compile group: 'org.kohsuke', name: 'github-api', version: '1.76'
 
     compile 'com.mcxiaoke.volley:library-aar:1.0.+'
 }

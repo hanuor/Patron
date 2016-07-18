@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sample"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccffffff">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Enter your name"
+            android:id="@+id/name"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/signup"
+            android:layout_alignStart="@+id/signup"
+            android:layout_marginTop="109dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="11dp"
+            android:hint="Enter password"
+            android:id="@+id/pass"
+            android:layout_below="@+id/name"/>
+        <EditText
+            android:layout_marginTop="11dp"
+            android:id="@+id/uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/pass"
+            android:textColor="#000000"
+            android:hint="Enter username"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/signup"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Sign me up"
+            android:textColor="#ffffff"
+            android:backgroundTint="#00838F"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
