@@ -8,9 +8,9 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core;
+package com.hanuor.patron.GithubAPI.CoreAPI;
 
-import org.eclipse.egit.github.core.service.IssueService;
+import com.hanuor.patron.GithubAPI.CoreAPI.service.IssueService;
 
 /**
  * Extension of {@link Issue} that includes the {@link Repository} that the

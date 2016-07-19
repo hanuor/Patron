@@ -8,9 +8,9 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.PARAM_PAGE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.PARAM_PAGE;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -22,8 +22,8 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-import org.eclipse.egit.github.core.IResourceProvider;
-import org.eclipse.egit.github.core.util.UrlUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.IResourceProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.UrlUtils;
 
 /**
  * Iterator for getting paged responses. Each call to {@link #next()} will make

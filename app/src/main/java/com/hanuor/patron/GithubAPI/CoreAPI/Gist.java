@@ -8,7 +8,7 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core;
+package com.hanuor.patron.GithubAPI.CoreAPI;
 
 import com.google.gson.annotations.SerializedName;
 
@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.egit.github.core.util.DateUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.DateUtils;
 
 /**
  * GitHub gist model class.

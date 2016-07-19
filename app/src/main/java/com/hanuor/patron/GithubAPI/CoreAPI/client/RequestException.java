@@ -8,18 +8,18 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
-import static org.eclipse.egit.github.core.FieldError.CODE_ALREADY_EXISTS;
-import static org.eclipse.egit.github.core.FieldError.CODE_INVALID;
-import static org.eclipse.egit.github.core.FieldError.CODE_MISSING_FIELD;
+import static com.hanuor.patron.GithubAPI.CoreAPI.FieldError.CODE_ALREADY_EXISTS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.FieldError.CODE_INVALID;
+import static com.hanuor.patron.GithubAPI.CoreAPI.FieldError.CODE_MISSING_FIELD;
 
 import java.io.IOException;
 import java.text.MessageFormat;
 import java.util.List;
 
-import org.eclipse.egit.github.core.FieldError;
-import org.eclipse.egit.github.core.RequestError;
+import com.hanuor.patron.GithubAPI.CoreAPI.FieldError;
+import com.hanuor.patron.GithubAPI.CoreAPI.RequestError;
 
 /**
  * Request exception class that wraps a {@link RequestError} object.

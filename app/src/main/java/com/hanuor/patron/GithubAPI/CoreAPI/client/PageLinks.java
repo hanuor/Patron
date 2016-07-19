@@ -8,16 +8,16 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.HEADER_LAST;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.HEADER_LINK;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.HEADER_NEXT;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.META_FIRST;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.META_LAST;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.META_NEXT;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.META_PREV;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.META_REL;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.HEADER_LAST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.HEADER_LINK;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.HEADER_NEXT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.META_FIRST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.META_LAST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.META_NEXT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.META_PREV;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.META_REL;
 
 /**
  * Page link class to be used to determine the links to other pages of request

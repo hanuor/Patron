@@ -8,15 +8,15 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.service;
+package com.hanuor.patron.GithubAPI.CoreAPI.service;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_BLOBS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_COMMITS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_GIT;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_REFS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_REPOS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_TAGS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_TREES;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_BLOBS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_COMMITS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_GIT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_REFS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_REPOS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_TAGS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_TREES;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -28,18 +28,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.egit.github.core.Blob;
-import org.eclipse.egit.github.core.Commit;
-import org.eclipse.egit.github.core.IRepositoryIdProvider;
-import org.eclipse.egit.github.core.Reference;
-import org.eclipse.egit.github.core.ShaResource;
-import org.eclipse.egit.github.core.Tag;
-import org.eclipse.egit.github.core.Tree;
-import org.eclipse.egit.github.core.TreeEntry;
-import org.eclipse.egit.github.core.TypedResource;
-import org.eclipse.egit.github.core.client.GitHubClient;
-import org.eclipse.egit.github.core.client.GitHubRequest;
-import org.eclipse.egit.github.core.client.PagedRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.Blob;
+import com.hanuor.patron.GithubAPI.CoreAPI.Commit;
+import com.hanuor.patron.GithubAPI.CoreAPI.IRepositoryIdProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.Reference;
+import com.hanuor.patron.GithubAPI.CoreAPI.ShaResource;
+import com.hanuor.patron.GithubAPI.CoreAPI.Tag;
+import com.hanuor.patron.GithubAPI.CoreAPI.Tree;
+import com.hanuor.patron.GithubAPI.CoreAPI.TreeEntry;
+import com.hanuor.patron.GithubAPI.CoreAPI.TypedResource;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubClient;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest;
 
 /**
  * Data service class for low-level access to Git repository data.

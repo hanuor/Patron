@@ -8,11 +8,11 @@
  * Contributors:
  *    Jon Ander Peñalba - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.event;
+package com.hanuor.patron.GithubAPI.CoreAPI.event;
 
 import java.io.Serializable;
 
-import org.eclipse.egit.github.core.Release;
+import com.hanuor.patron.GithubAPI.CoreAPI.Release;
 
 /**
  * ReleaseEvent payload model class.

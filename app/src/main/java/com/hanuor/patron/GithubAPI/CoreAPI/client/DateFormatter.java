@@ -8,11 +8,7 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.client;
-
-import static org.eclipse.egit.github.core.client.IGitHubConstants.DATE_FORMAT;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.DATE_FORMAT_V2_1;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.DATE_FORMAT_V2_2;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
@@ -28,6 +24,10 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
+
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.DATE_FORMAT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.DATE_FORMAT_V2_1;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.DATE_FORMAT_V2_2;
 
 /**
  * Formatter for date formats present in the GitHub v2 and v3 API.

@@ -8,12 +8,12 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.PARAM_PAGE;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.PARAM_PER_PAGE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.PARAM_PAGE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.PARAM_PER_PAGE;
 
-import org.eclipse.egit.github.core.util.UrlUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.UrlUtils;
 
 /**
  * Paged request class that contains the initial page size and page number of

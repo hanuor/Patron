@@ -8,28 +8,28 @@
  *  Contributors:
  *    Jason Tsay (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
 import static com.google.gson.FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES;
-import static org.eclipse.egit.github.core.event.Event.TYPE_COMMIT_COMMENT;
-import static org.eclipse.egit.github.core.event.Event.TYPE_CREATE;
-import static org.eclipse.egit.github.core.event.Event.TYPE_DELETE;
-import static org.eclipse.egit.github.core.event.Event.TYPE_DOWNLOAD;
-import static org.eclipse.egit.github.core.event.Event.TYPE_FOLLOW;
-import static org.eclipse.egit.github.core.event.Event.TYPE_FORK;
-import static org.eclipse.egit.github.core.event.Event.TYPE_FORK_APPLY;
-import static org.eclipse.egit.github.core.event.Event.TYPE_GIST;
-import static org.eclipse.egit.github.core.event.Event.TYPE_GOLLUM;
-import static org.eclipse.egit.github.core.event.Event.TYPE_ISSUES;
-import static org.eclipse.egit.github.core.event.Event.TYPE_ISSUE_COMMENT;
-import static org.eclipse.egit.github.core.event.Event.TYPE_MEMBER;
-import static org.eclipse.egit.github.core.event.Event.TYPE_PUBLIC;
-import static org.eclipse.egit.github.core.event.Event.TYPE_PULL_REQUEST;
-import static org.eclipse.egit.github.core.event.Event.TYPE_PULL_REQUEST_REVIEW_COMMENT;
-import static org.eclipse.egit.github.core.event.Event.TYPE_PUSH;
-import static org.eclipse.egit.github.core.event.Event.TYPE_RELEASE;
-import static org.eclipse.egit.github.core.event.Event.TYPE_TEAM_ADD;
-import static org.eclipse.egit.github.core.event.Event.TYPE_WATCH;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_COMMIT_COMMENT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_CREATE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_DELETE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_DOWNLOAD;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_FOLLOW;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_FORK;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_FORK_APPLY;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_GIST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_GOLLUM;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_ISSUES;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_ISSUE_COMMENT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_MEMBER;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_PUBLIC;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_PULL_REQUEST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_PULL_REQUEST_REVIEW_COMMENT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_PUSH;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_RELEASE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_TEAM_ADD;
+import static com.hanuor.patron.GithubAPI.CoreAPI.event.Event.TYPE_WATCH;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -41,27 +41,27 @@ import com.google.gson.JsonParseException;
 import java.lang.reflect.Type;
 import java.util.Date;
 
-import org.eclipse.egit.github.core.event.CommitCommentPayload;
-import org.eclipse.egit.github.core.event.CreatePayload;
-import org.eclipse.egit.github.core.event.DeletePayload;
-import org.eclipse.egit.github.core.event.DownloadPayload;
-import org.eclipse.egit.github.core.event.Event;
-import org.eclipse.egit.github.core.event.EventPayload;
-import org.eclipse.egit.github.core.event.FollowPayload;
-import org.eclipse.egit.github.core.event.ForkApplyPayload;
-import org.eclipse.egit.github.core.event.ForkPayload;
-import org.eclipse.egit.github.core.event.GistPayload;
-import org.eclipse.egit.github.core.event.GollumPayload;
-import org.eclipse.egit.github.core.event.IssueCommentPayload;
-import org.eclipse.egit.github.core.event.IssuesPayload;
-import org.eclipse.egit.github.core.event.MemberPayload;
-import org.eclipse.egit.github.core.event.PublicPayload;
-import org.eclipse.egit.github.core.event.PullRequestPayload;
-import org.eclipse.egit.github.core.event.PullRequestReviewCommentPayload;
-import org.eclipse.egit.github.core.event.PushPayload;
-import org.eclipse.egit.github.core.event.ReleasePayload;
-import org.eclipse.egit.github.core.event.TeamAddPayload;
-import org.eclipse.egit.github.core.event.WatchPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.CommitCommentPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.CreatePayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.DeletePayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.DownloadPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.Event;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.EventPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.FollowPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.ForkApplyPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.ForkPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.GistPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.GollumPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.IssueCommentPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.IssuesPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.MemberPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.PublicPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.PullRequestPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.PullRequestReviewCommentPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.PushPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.ReleasePayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.TeamAddPayload;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.WatchPayload;
 
 /**
  * Formats an event's payload with the appropriate class given a certain event

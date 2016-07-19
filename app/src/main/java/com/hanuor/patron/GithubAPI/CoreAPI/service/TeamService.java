@@ -10,13 +10,13 @@
  *    Michael Mathews (Arizona Board of Regents) - (Bug: 447419)
  *    			 Team Membership API implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.service;
+package com.hanuor.patron.GithubAPI.CoreAPI.service;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_MEMBERS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_MEMBERSHIPS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_ORGS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_REPOS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_TEAMS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_MEMBERS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_MEMBERSHIPS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_ORGS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_REPOS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_TEAMS;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -25,14 +25,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.egit.github.core.IRepositoryIdProvider;
-import org.eclipse.egit.github.core.Repository;
-import org.eclipse.egit.github.core.Team;
-import org.eclipse.egit.github.core.TeamMembership;
-import org.eclipse.egit.github.core.User;
-import org.eclipse.egit.github.core.client.GitHubClient;
-import org.eclipse.egit.github.core.client.GitHubRequest;
-import org.eclipse.egit.github.core.client.PagedRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.IRepositoryIdProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.Repository;
+import com.hanuor.patron.GithubAPI.CoreAPI.Team;
+import com.hanuor.patron.GithubAPI.CoreAPI.TeamMembership;
+import com.hanuor.patron.GithubAPI.CoreAPI.User;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubClient;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest;
 
 /**
  * Service class for working with organization teams

@@ -8,12 +8,12 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.event;
+package com.hanuor.patron.GithubAPI.CoreAPI.event;
 
 import java.io.Serializable;
 
-import org.eclipse.egit.github.core.CommitComment;
-import org.eclipse.egit.github.core.PullRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.CommitComment;
+import com.hanuor.patron.GithubAPI.CoreAPI.PullRequest;
 
 /**
  * Payload for an event with type {@link Event#TYPE_PULL_REQUEST_REVIEW_COMMENT}

@@ -8,9 +8,9 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.service;
+package com.hanuor.patron.GithubAPI.CoreAPI.service;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_AUTHORIZATIONS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_AUTHORIZATIONS;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -20,10 +20,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.egit.github.core.Authorization;
-import org.eclipse.egit.github.core.client.GitHubClient;
-import org.eclipse.egit.github.core.client.GitHubRequest;
-import org.eclipse.egit.github.core.client.PagedRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.Authorization;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubClient;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest;
 
 /**
  * Service for interacting with a user's OAUth authorizations

@@ -8,15 +8,15 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.service;
+package com.hanuor.patron.GithubAPI.CoreAPI.service;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_MEMBERS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_ORGS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_PUBLIC_MEMBERS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_USER;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_USERS;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_FIRST;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_SIZE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_MEMBERS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_ORGS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_PUBLIC_MEMBERS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_USER;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_USERS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_FIRST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_SIZE;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -24,10 +24,10 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import org.eclipse.egit.github.core.User;
-import org.eclipse.egit.github.core.client.GitHubClient;
-import org.eclipse.egit.github.core.client.GitHubRequest;
-import org.eclipse.egit.github.core.client.PagedRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.User;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubClient;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest;
 
 /**
  * Organization service class
@@ -181,7 +181,7 @@ public class OrganizationService extends GitHubService {
 	 * @param roleFilter
 	 *          only return members matching the {@link RoleFilter}<br>
 	 *          To use this feature it is currently required to set the
-	 *          {@link org.eclipse.egit.github.core.service.GitHubService#ACCEPT_PREVIEW_IRONMAN
+	 *          {@link com.hanuor.patron.GithubAPI.CoreAPI.service.GitHubService#ACCEPT_PREVIEW_IRONMAN
 	 *          application/vnd.github.ironman-preview+json} Accept header in the
 	 *          {@link GitHubClient#setHeaderAccept GitHubClient}
 	 * @return list of all organization members whose role matches the {@code roleFilter}

@@ -8,12 +8,12 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
 import java.lang.reflect.Type;
 import java.util.Map;
 
-import org.eclipse.egit.github.core.util.UrlUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.UrlUtils;
 
 /**
  * GitHub API request class that contains the URI and parameters of the request

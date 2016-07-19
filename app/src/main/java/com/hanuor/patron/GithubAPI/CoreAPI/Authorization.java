@@ -8,13 +8,13 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core;
+package com.hanuor.patron.GithubAPI.CoreAPI;
+
+import com.hanuor.patron.GithubAPI.CoreAPI.util.DateUtils;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-
-import org.eclipse.egit.github.core.util.DateUtils;
 
 /**
  * Authorization model class

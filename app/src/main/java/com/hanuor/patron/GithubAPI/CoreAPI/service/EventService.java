@@ -8,27 +8,27 @@
  *  Contributors:
  *    Jason Tsay (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.service;
+package com.hanuor.patron.GithubAPI.CoreAPI.service;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_EVENTS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_NETWORKS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_ORGS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_PUBLIC;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_RECEIVED_EVENTS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_REPOS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_USERS;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_FIRST;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_SIZE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_EVENTS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_NETWORKS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_ORGS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_PUBLIC;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_RECEIVED_EVENTS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_REPOS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_USERS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_FIRST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_SIZE;
 
 import com.google.gson.reflect.TypeToken;
 
 import java.util.List;
 
-import org.eclipse.egit.github.core.IRepositoryIdProvider;
-import org.eclipse.egit.github.core.client.GitHubClient;
-import org.eclipse.egit.github.core.client.PageIterator;
-import org.eclipse.egit.github.core.client.PagedRequest;
-import org.eclipse.egit.github.core.event.Event;
+import com.hanuor.patron.GithubAPI.CoreAPI.IRepositoryIdProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubClient;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PageIterator;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.Event;
 
 /**
  * Service class for interacting with Events

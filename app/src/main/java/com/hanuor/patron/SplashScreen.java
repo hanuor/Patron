@@ -1,6 +1,7 @@
 package com.hanuor.patron;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -41,6 +42,9 @@ public class SplashScreen extends AppCompatActivity {
                     @Override
                     public void onSuccess(Object o) {
                         pd.dismiss();
+                        Intent mx = new Intent(SplashScreen.this, MainActivity.class);
+                        startActivity(mx);
+                        finish();
                     }
 
                     @Override

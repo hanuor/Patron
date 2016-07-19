@@ -8,9 +8,9 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.util;
+package com.hanuor.patron.GithubAPI.CoreAPI.util;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.CHARSET_UTF8;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.CHARSET_UTF8;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;

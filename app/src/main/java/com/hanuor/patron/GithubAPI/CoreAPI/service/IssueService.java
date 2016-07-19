@@ -8,17 +8,17 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.service;
+package com.hanuor.patron.GithubAPI.CoreAPI.service;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.CHARSET_UTF8;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_COMMENTS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_EVENTS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_ISSUES;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_LEGACY;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_REPOS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_SEARCH;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_FIRST;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_SIZE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.CHARSET_UTF8;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_COMMENTS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_EVENTS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_ISSUES;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_LEGACY;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_REPOS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_SEARCH;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_FIRST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_SIZE;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -29,20 +29,20 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.egit.github.core.Comment;
-import org.eclipse.egit.github.core.IRepositoryIdProvider;
-import org.eclipse.egit.github.core.IResourceProvider;
-import org.eclipse.egit.github.core.Issue;
-import org.eclipse.egit.github.core.IssueEvent;
-import org.eclipse.egit.github.core.Label;
-import org.eclipse.egit.github.core.Milestone;
-import org.eclipse.egit.github.core.RepositoryIssue;
-import org.eclipse.egit.github.core.SearchIssue;
-import org.eclipse.egit.github.core.User;
-import org.eclipse.egit.github.core.client.GitHubClient;
-import org.eclipse.egit.github.core.client.GitHubRequest;
-import org.eclipse.egit.github.core.client.PageIterator;
-import org.eclipse.egit.github.core.client.PagedRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.Comment;
+import com.hanuor.patron.GithubAPI.CoreAPI.IRepositoryIdProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.IResourceProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.Issue;
+import com.hanuor.patron.GithubAPI.CoreAPI.IssueEvent;
+import com.hanuor.patron.GithubAPI.CoreAPI.Label;
+import com.hanuor.patron.GithubAPI.CoreAPI.Milestone;
+import com.hanuor.patron.GithubAPI.CoreAPI.RepositoryIssue;
+import com.hanuor.patron.GithubAPI.CoreAPI.SearchIssue;
+import com.hanuor.patron.GithubAPI.CoreAPI.User;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubClient;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PageIterator;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest;
 
 /**
  * Issue service class for listing, searching, and fetching {@link Issue}
@@ -164,7 +164,7 @@ public class IssueService extends GitHubService {
 		private List<SearchIssue> issues;
 
 		/**
-		 * @see org.eclipse.egit.github.core.IResourceProvider#getResources()
+		 * @see com.hanuor.patron.GithubAPI.CoreAPI.IResourceProvider#getResources()
 		 */
 		public List<SearchIssue> getResources() {
 			return issues;

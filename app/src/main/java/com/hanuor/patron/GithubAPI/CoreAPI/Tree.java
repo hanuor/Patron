@@ -8,7 +8,7 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core;
+package com.hanuor.patron.GithubAPI.CoreAPI;
 
 import java.io.Serializable;
 import java.util.List;

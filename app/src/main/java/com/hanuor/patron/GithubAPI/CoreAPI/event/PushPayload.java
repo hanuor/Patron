@@ -8,12 +8,12 @@
  *  Contributors:
  *    Jason Tsay (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.event;
+package com.hanuor.patron.GithubAPI.CoreAPI.event;
 
 import java.io.Serializable;
 import java.util.List;
 
-import org.eclipse.egit.github.core.Commit;
+import com.hanuor.patron.GithubAPI.CoreAPI.Commit;
 
 /**
  * PushEvent payload model class.

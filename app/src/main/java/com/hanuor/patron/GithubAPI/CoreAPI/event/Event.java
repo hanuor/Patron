@@ -8,15 +8,15 @@
  *  Contributors:
  *    Jason Tsay (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.event;
+package com.hanuor.patron.GithubAPI.CoreAPI.event;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.Date;
 
-import org.eclipse.egit.github.core.User;
-import org.eclipse.egit.github.core.util.DateUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.User;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.DateUtils;
 
 /**
  * Event model class.

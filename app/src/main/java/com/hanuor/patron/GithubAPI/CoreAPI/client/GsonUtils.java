@@ -8,7 +8,7 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
 import static com.google.gson.FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES;
 
@@ -19,7 +19,7 @@ import java.io.Reader;
 import java.lang.reflect.Type;
 import java.util.Date;
 
-import org.eclipse.egit.github.core.event.Event;
+import com.hanuor.patron.GithubAPI.CoreAPI.event.Event;
 
 /**
  * Gson utilities.

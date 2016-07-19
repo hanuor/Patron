@@ -9,7 +9,7 @@
  *    Michael Mathews (Arizona Board of Regents) - (Bug: 447419)
  *    			 Team Membership API implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core;
+package com.hanuor.patron.GithubAPI.CoreAPI;
 
 import java.io.Serializable;
 

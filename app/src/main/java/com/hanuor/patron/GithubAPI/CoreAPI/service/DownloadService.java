@@ -8,13 +8,13 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.service;
+package com.hanuor.patron.GithubAPI.CoreAPI.service;
 
 import static java.net.HttpURLConnection.HTTP_CREATED;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_DOWNLOADS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_REPOS;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_FIRST;
-import static org.eclipse.egit.github.core.client.PagedRequest.PAGE_SIZE;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_DOWNLOADS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_REPOS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_FIRST;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest.PAGE_SIZE;
 
 import com.google.gson.reflect.TypeToken;
 
@@ -27,14 +27,14 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.eclipse.egit.github.core.Download;
-import org.eclipse.egit.github.core.DownloadResource;
-import org.eclipse.egit.github.core.IRepositoryIdProvider;
-import org.eclipse.egit.github.core.client.GitHubClient;
-import org.eclipse.egit.github.core.client.GitHubRequest;
-import org.eclipse.egit.github.core.client.PageIterator;
-import org.eclipse.egit.github.core.client.PagedRequest;
-import org.eclipse.egit.github.core.util.MultiPartUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.Download;
+import com.hanuor.patron.GithubAPI.CoreAPI.DownloadResource;
+import com.hanuor.patron.GithubAPI.CoreAPI.IRepositoryIdProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubClient;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.GitHubRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PageIterator;
+import com.hanuor.patron.GithubAPI.CoreAPI.client.PagedRequest;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.MultiPartUtils;
 
 /**
  * Service for accessing, creating, and deleting repositories downloads.

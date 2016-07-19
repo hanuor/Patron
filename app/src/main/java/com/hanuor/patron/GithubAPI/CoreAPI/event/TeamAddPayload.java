@@ -8,13 +8,13 @@
  *  Contributors:
  *    Jason Tsay (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.event;
+package com.hanuor.patron.GithubAPI.CoreAPI.event;
 
 import java.io.Serializable;
 
-import org.eclipse.egit.github.core.Repository;
-import org.eclipse.egit.github.core.Team;
-import org.eclipse.egit.github.core.User;
+import com.hanuor.patron.GithubAPI.CoreAPI.Repository;
+import com.hanuor.patron.GithubAPI.CoreAPI.Team;
+import com.hanuor.patron.GithubAPI.CoreAPI.User;
 
 /**
  * TeamAddEvent payload model class

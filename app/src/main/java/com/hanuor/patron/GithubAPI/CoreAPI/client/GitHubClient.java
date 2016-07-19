@@ -9,7 +9,7 @@
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *    Christian Trutz             - HttpClient 4.1
  *******************************************************************************/
-package org.eclipse.egit.github.core.client;
+package com.hanuor.patron.GithubAPI.CoreAPI.client;
 
 import static com.google.gson.stream.JsonToken.BEGIN_ARRAY;
 import static java.net.HttpURLConnection.HTTP_ACCEPTED;
@@ -23,15 +23,15 @@ import static java.net.HttpURLConnection.HTTP_NOT_FOUND;
 import static java.net.HttpURLConnection.HTTP_NO_CONTENT;
 import static java.net.HttpURLConnection.HTTP_OK;
 import static java.net.HttpURLConnection.HTTP_UNAUTHORIZED;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.AUTH_TOKEN;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.CHARSET_UTF8;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.CONTENT_TYPE_JSON;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.HOST_API;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.HOST_DEFAULT;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.HOST_GISTS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.PROTOCOL_HTTPS;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SEGMENT_V3_API;
-import static org.eclipse.egit.github.core.service.GitHubService.ACCEPT_FULL;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.AUTH_TOKEN;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.CHARSET_UTF8;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.CONTENT_TYPE_JSON;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.HOST_API;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.HOST_DEFAULT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.HOST_GISTS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.PROTOCOL_HTTPS;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SEGMENT_V3_API;
+import static com.hanuor.patron.GithubAPI.CoreAPI.service.GitHubService.ACCEPT_FULL;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonParseException;
@@ -46,8 +46,8 @@ import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import org.eclipse.egit.github.core.RequestError;
-import org.eclipse.egit.github.core.util.EncodingUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.RequestError;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.EncodingUtils;
 
 /**
  * Client class for interacting with GitHub HTTP/JSON API.

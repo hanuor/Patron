@@ -8,13 +8,13 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core;
+package com.hanuor.patron.GithubAPI.CoreAPI;
 
 import java.io.Serializable;
 import java.text.MessageFormat;
 import java.util.Date;
 
-import org.eclipse.egit.github.core.util.DateUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.DateUtils;
 
 /**
  * Status of a commit in a repository

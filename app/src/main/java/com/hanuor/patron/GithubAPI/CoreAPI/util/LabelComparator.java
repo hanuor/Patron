@@ -8,12 +8,12 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *******************************************************************************/
-package org.eclipse.egit.github.core.util;
+package com.hanuor.patron.GithubAPI.CoreAPI.util;
 
 import java.io.Serializable;
 import java.util.Comparator;
 
-import org.eclipse.egit.github.core.Label;
+import com.hanuor.patron.GithubAPI.CoreAPI.Label;
 
 /**
  * Label comparator using case-insensitive name comparisons.

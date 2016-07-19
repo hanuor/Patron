@@ -8,11 +8,11 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core;
+package com.hanuor.patron.GithubAPI.CoreAPI;
 
 import java.util.Date;
 
-import org.eclipse.egit.github.core.util.DateUtils;
+import com.hanuor.patron.GithubAPI.CoreAPI.util.DateUtils;
 
 /**
  * Extension of {@link Download} to represent the initiation of a download with

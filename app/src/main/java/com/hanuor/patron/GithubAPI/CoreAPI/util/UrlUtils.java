@@ -8,11 +8,11 @@
  *  Contributors:
  *    Kevin Sawicki (GitHub Inc.) - initial API and implementation
  *****************************************************************************/
-package org.eclipse.egit.github.core.util;
+package com.hanuor.patron.GithubAPI.CoreAPI.util;
 
-import static org.eclipse.egit.github.core.client.IGitHubConstants.CHARSET_ISO_8859_1;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.HOST_DEFAULT;
-import static org.eclipse.egit.github.core.client.IGitHubConstants.SUFFIX_GIT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.CHARSET_ISO_8859_1;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.HOST_DEFAULT;
+import static com.hanuor.patron.GithubAPI.CoreAPI.client.IGitHubConstants.SUFFIX_GIT;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
@@ -21,7 +21,7 @@ import java.net.URLEncoder;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.eclipse.egit.github.core.IRepositoryIdProvider;
+import com.hanuor.patron.GithubAPI.CoreAPI.IRepositoryIdProvider;
 
 /**
  * URL utilities
